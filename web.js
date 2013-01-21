@@ -2,9 +2,10 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
-app.use(app.router);
-app.use(express.static(__dirname + '/app'));
 
+app.use("/", express.static(__dirname + '/app'));
+app.use("/modules/*" , express.static(__dirname + '/app/modules'));
+app.use(app.router);
  
 
 var port = process.env.PORT || 5000;
