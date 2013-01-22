@@ -6,8 +6,7 @@ var send = require('send')
 
 var app = http.createServer( function(req, res){
   	send(req.url)
-  		.from('app')
- 		.maxage(60000)
+  		.from(__dirname,'/app') 
   		.pipe(res);
 	} 
 );
