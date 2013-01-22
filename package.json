@@ -2,7 +2,7 @@
   "name": "m",
   "version": "0.0.1",
   "dependencies": { 
-    "send" : "",
+    "node-static" : "",
     "http" : ""
   },
    "engines": {
